@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тригонометрические уравнения</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+
+    <div class="container">
+        <header class="section-header">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span> 8. Тригонометрические уравнения</span>
+            </nav>
+            <h1>8. Тригонометрические уравнения</h1>
+            <p class="section-subtitle">Общие и частные решения, методы решения уравнений с тригонометрическими функциями</p>
+        </header>
+
+        <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="theory">Теория</button>
+                <button class="tab-button" data-tab="practice">Практика</button>
+                <button class="tab-button" data-tab="quiz">Тесты</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="theory" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Что такое тригонометрическое уравнение?</h2>
+                        <p><strong>Тригонометрическое уравнение</strong> — это уравнение, содержащее одну или несколько тригонометрических функций (sin, cos, tg, ctg) от переменной.</p>
+
+                        <h3>Основные виды и решения</h3>
+                        <ul>
+                            <li>\( \sin x = a \Rightarrow x = (-1)^n \arcsin a + \pi n \)</li>
+                            <li>\( \cos x = a \Rightarrow x = \pm \arccos a + 2\pi n \)</li>
+                            <li>\( tg x = a \Rightarrow x = arctg a + \pi n \)</li>
+                            <li>\( ctg x = a \Rightarrow x = arcctg a + \pi n \)</li>
+                        </ul>
+
+                        <h3>Примеры уравнений</h3>
+                        <ul>
+                            <li>\( \sin x = \frac{1}{2} \Rightarrow x = \frac{\pi}{6} + 2\pi n, \frac{5\pi}{6} + 2\pi n \)</li>
+                            <li>\( \cos x = -\frac{\sqrt{2}}{2} \Rightarrow x = \frac{3\pi}{4} + 2\pi n, \frac{5\pi}{4} + 2\pi n \)</li>
+                        </ul>
+
+                        <h3>Методы решения</h3>
+                        <ul>
+                            <li>Использование формул обратных функций</li>
+                            <li>Использование тригонометрических тождеств</li>
+                            <li>Приведение уравнений к квадратным или однородным</li>
+                            <li>Подстановка, разложение и методы замены</li>
+                        </ul>
+
+                        <h3>Общий подход</h3>
+                        <ol>
+                            <li>Упростить уравнение с помощью тождеств</li>
+                            <li>Найти общее решение элементарного уравнения</li>
+                            <li>Учесть область определения (ОДЗ)</li>
+                        </ol>
+                    </article>
+                </div>
+
+                <div id="practice" class="tab-pane">
+                    <div class="practice-content">
+                        <h2>Практическое задание</h2>
+
+                        <div class="task-card">
+                            <h3>1. Найдите общее решение уравнений</h3>
+                            <ol>
+                                <li>\( \sin x = \frac{1}{2} \)</li>
+                                <li>\( \cos x = -\frac{1}{2} \)</li>
+                                <li>\( tg x = 1 \)</li>
+                            </ol>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>2. Найдите корни на интервале \( [0; 2\pi] \)</h3>
+                            <ol>
+                                <li>\( \sin x = -\frac{\sqrt{2}}{2} \)</li>
+                                <li>\( tg x = \sqrt{3} \)</li>
+                            </ol>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>3. Упростите уравнение и решите</h3>
+                            <ol>
+                                <li>\( 2\sin^2 x - 1 = 0 \)</li>
+                                <li>\( \cos^2 x - \sin^2 x = 0 \)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="quiz" class="tab-pane">
+                    <div class="quiz-content">
+                        <h2>Тест: тригонометрические уравнения</h2>
+
+                        <div class="quiz-question">
+                            <p><strong>1. Чему равен корень уравнения \( \sin x = 1 \) на интервале \( [0; 2\pi] \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q1" value="1"> \( \frac{\pi}{2} \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( \frac{3\pi}{2} \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( \pi \)</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>2. Сколько корней имеет уравнение \( \cos x = 0 \) на \( [0; 2\pi] \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q2" value="0"> Один</label></li>
+                                <li><label><input type="radio" name="q2" value="1"> Два</label></li>
+                                <li><label><input type="radio" name="q2" value="0"> Три</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>3. Как решается уравнение \( tg x = 1 \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q3" value="0"> \( x = \arcsin 1 \)</label></li>
+                                <li><label><input type="radio" name="q3" value="1"> \( x = \frac{\pi}{4} + \pi n \)</label></li>
+                                <li><label><input type="radio" name="q3" value="0"> \( x = \pi + 2\pi n \)</label></li>
+                            </ul>
+                        </div>
+
+                        <button id="check-quiz">Проверить</button>
+                        <p id="quiz-result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по математике 10 класса</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</body>
+
+</html>

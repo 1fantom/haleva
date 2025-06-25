@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формулы приведения</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+
+    <div class="container">
+        <header class="section-header">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span> 9. Формулы приведения</span>
+            </nav>
+            <h1>9. Формулы приведения</h1>
+            <p class="section-subtitle">Правила преобразования тригонометрических выражений с аргументами вида \( \alpha \pm n\pi/2 \)</p>
+        </header>
+
+        <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="theory">Теория</button>
+                <button class="tab-button" data-tab="practice">Практика</button>
+                <button class="tab-button" data-tab="quiz">Тесты</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="theory" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Что такое формулы приведения?</h2>
+                        <p><strong>Формулы приведения</strong> используются для упрощения тригонометрических выражений, в которых аргумент функции содержит кратные углы, такие как \( \pi, \frac{\pi}{2}, 2\pi \) и т.д.</p>
+
+                        <h3>Основной принцип</h3>
+                        <p>Аргумент вида \( \alpha \pm n\pi/2 \) можно преобразовать, определяя:</p>
+                        <ul>
+                            <li>в какую четверть попадает угол,</li>
+                            <li>как изменяется функция (синус/косинус/тангенс и т.д.),</li>
+                            <li>какой знак принимает результат.</li>
+                        </ul>
+
+                        <h3>Примеры формул приведения</h3>
+                        <ul>
+                            <li>\( \sin(\pi - x) = \sin x \)</li>
+                            <li>\( \cos(\pi - x) = -\cos x \)</li>
+                            <li>\( \sin(\pi + x) = -\sin x \)</li>
+                            <li>\( \cos(\pi + x) = -\cos x \)</li>
+                            <li>\( tg(\pi - x) = -tg x \)</li>
+                            <li>\( tg(\pi + x) = tg x \)</li>
+                        </ul>
+
+                        <h3>Как применять?</h3>
+                        <ol>
+                            <li>Определите знак функции в соответствующей четверти.</li>
+                            <li>Проверьте, сохраняется ли функция или меняется (например, \( \sin \) → \( \cos \)).</li>
+                            <li>Упростите выражение.</li>
+                        </ol>
+
+                        <h3>Знаки функций в разных четвертях</h3>
+                        <p>Схема (Знаменитая фраза: «Стал Косой Тянуть Катер»):</p>
+                        <ul>
+                            <li>I четверть: sin +, cos +, tg +</li>
+                            <li>II четверть: sin +, cos –, tg –</li>
+                            <li>III четверть: sin –, cos –, tg +</li>
+                            <li>IV четверть: sin –, cos +, tg –</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div id="practice" class="tab-pane">
+                    <div class="practice-content">
+                        <h2>Практическое задание</h2>
+
+                        <div class="task-card">
+                            <h3>1. Упростите выражения</h3>
+                            <ol>
+                                <li>\( \sin(\pi - x) \)</li>
+                                <li>\( \cos(\pi + x) \)</li>
+                                <li>\( tg(2\pi - x) \)</li>
+                                <li>\( \sin(-x) \)</li>
+                            </ol>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>2. Найдите значения</h3>
+                            <ol>
+                                <li>\( \cos(180^\circ + 60^\circ) \)</li>
+                                <li>\( \sin(360^\circ - 30^\circ) \)</li>
+                            </ol>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>3. Решите уравнение с приведением</h3>
+                            <p>\( \sin(\pi - x) = \frac{1}{2} \)</p>
+                            <p>Подсказка: используйте формулу приведения, а затем решите стандартное уравнение.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="quiz" class="tab-pane">
+                    <div class="quiz-content">
+                        <h2>Тест: формулы приведения</h2>
+
+                        <div class="quiz-question">
+                            <p><strong>1. Чему равен \( \sin(\pi - x) \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q1" value="1"> \( \sin x \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( -\sin x \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( \cos x \)</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>2. В какой четверти находится угол \( 180^\circ + x \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q2" value="0"> II</label></li>
+                                <li><label><input type="radio" name="q2" value="1"> III</label></li>
+                                <li><label><input type="radio" name="q2" value="0"> IV</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>3. Упростите: \( \cos(\pi - x) \)</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q3" value="0"> \( \cos x \)</label></li>
+                                <li><label><input type="radio" name="q3" value="1"> \( -\cos x \)</label></li>
+                                <li><label><input type="radio" name="q3" value="0"> \( \sin x \)</label></li>
+                            </ul>
+                        </div>
+
+                        <button id="check-quiz">Проверить</button>
+                        <p id="quiz-result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по математике 10 класса</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</body>
+
+</html>

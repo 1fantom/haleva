@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преобразование суммы в произведение</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+
+    <div class="container">
+        <header class="section-header">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span> 12. Преобразование суммы в произведение</span>
+            </nav>
+            <h1>12. Преобразование суммы в произведение</h1>
+            <p class="section-subtitle">Формулы преобразования суммы и разности тригонометрических функций в произведение</p>
+        </header>
+
+        <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="theory">Теория</button>
+                <button class="tab-button" data-tab="practice">Практика</button>
+                <button class="tab-button" data-tab="quiz">Тесты</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="theory" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Формулы преобразования суммы в произведение</h2>
+                        <p>Эти формулы позволяют преобразовывать суммы и разности тригонометрических функций в произведения, что упрощает решение уравнений и вычислений.</p>
+
+                        <h3>Основные формулы</h3>
+                        <ul>
+                            <li>\[ \sin \alpha + \sin \beta = 2 \sin \frac{\alpha + \beta}{2} \cos \frac{\alpha - \beta}{2} \]</li>
+                            <li>\[ \sin \alpha - \sin \beta = 2 \cos \frac{\alpha + \beta}{2} \sin \frac{\alpha - \beta}{2} \]</li>
+                            <li>\[ \cos \alpha + \cos \beta = 2 \cos \frac{\alpha + \beta}{2} \cos \frac{\alpha - \beta}{2} \]</li>
+                            <li>\[ \cos \alpha - \cos \beta = -2 \sin \frac{\alpha + \beta}{2} \sin \frac{\alpha - \beta}{2} \]</li>
+                        </ul>
+
+                        <h3>Дополнительные формулы</h3>
+                        <ul>
+                            <li>\[ 1 + \cos \alpha = 2 \cos^2 \frac{\alpha}{2} \]</li>
+                            <li>\[ 1 - \cos \alpha = 2 \sin^2 \frac{\alpha}{2} \]</li>
+                            <li>\[ \sin \alpha \cos \beta = \frac{1}{2} [\sin(\alpha + \beta) + \sin(\alpha - \beta)] \]</li>
+                        </ul>
+
+                        <h3>Примеры применения</h3>
+                        <p><strong>Пример 1:</strong> Преобразуем сумму синусов</p>
+                        <p>\[ \sin 50^\circ + \sin 10^\circ = 2 \sin \frac{50^\circ + 10^\circ}{2} \cos \frac{50^\circ - 10^\circ}{2} = 2 \sin 30^\circ \cos 20^\circ \]</p>
+
+                        <p><strong>Пример 2:</strong> Упростим выражение</p>
+                        <p>\[ \cos 75^\circ - \cos 15^\circ = -2 \sin \frac{75^\circ + 15^\circ}{2} \sin \frac{75^\circ - 15^\circ}{2} = -2 \sin 45^\circ \sin 30^\circ \]</p>
+                    </article>
+                </div>
+
+                <div id="practice" class="tab-pane">
+                    <div class="practice-content">
+                        <h2>Практические задания</h2>
+
+                        <div class="task-card">
+                            <h3>1. Преобразуйте в произведение</h3>
+                            <ol>
+                                <li>\( \sin 40^\circ + \sin 20^\circ \)</li>
+                                <li>\( \cos \frac{\pi}{3} - \cos \frac{\pi}{6} \)</li>
+                                <li>\( \sin 3x + \sin x \)</li>
+                            </ol>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>2. Упростите выражения</h3>
+                            <ol>
+                                <li>\( \frac{\sin 5x - \sin 3x}{\cos 5x + \cos 3x} \)</li>
+                                <li>\( \frac{1 + \cos 2x}{\sin 2x} \)</li>
+                                <li>\( \cos^2 x - \cos^2 y \)</li>
+                            </ol>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>3. Решите уравнения</h3>
+                            <ol>
+                                <li>\( \sin x + \sin 3x = 0 \)</li>
+                                <li>\( \cos 2x + \cos x = 0 \)</li>
+                            </ol>
+                            <p>Найдите все решения на интервале \( [0; 2\pi] \).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="quiz" class="tab-pane">
+                    <div class="quiz-content">
+                        <h2>Тест: Преобразование суммы в произведение</h2>
+
+                        <div class="quiz-question">
+                            <p><strong>1. Как преобразуется \( \sin \alpha + \sin \beta \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q1" value="1"> \( 2 \sin \frac{\alpha + \beta}{2} \cos \frac{\alpha - \beta}{2} \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( 2 \cos \frac{\alpha + \beta}{2} \sin \frac{\alpha - \beta}{2} \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( \sin \alpha \cos \beta + \cos \alpha \sin \beta \)</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>2. Как преобразуется \( \cos \alpha - \cos \beta \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q2" value="1"> \( -2 \sin \frac{\alpha + \beta}{2} \sin \frac{\alpha - \beta}{2} \)</label></li>
+                                <li><label><input type="radio" name="q2" value="0"> \( 2 \cos \frac{\alpha + \beta}{2} \cos \frac{\alpha - \beta}{2} \)</label></li>
+                                <li><label><input type="radio" name="q2" value="0"> \( \cos \alpha \cos \beta + \sin \alpha \sin \beta \)</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>3. Чему равно \( 1 - \cos \alpha \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q3" value="1"> \( 2 \sin^2 \frac{\alpha}{2} \)</label></li>
+                                <li><label><input type="radio" name="q3" value="0"> \( 2 \cos^2 \frac{\alpha}{2} \)</label></li>
+                                <li><label><input type="radio" name="q3" value="0"> \( \sin^2 \alpha \)</label></li>
+                            </ul>
+                        </div>
+
+                        <button id="check-quiz">Проверить</button>
+                        <p id="quiz-result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по математике 10 класса</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</body>
+
+</html>

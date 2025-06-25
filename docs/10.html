@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Синус и косинус суммы и разности углов</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+
+    <div class="container">
+        <header class="section-header">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span> 10. Синус/косинус суммы и разности</span>
+            </nav>
+            <h1>10. Формулы синуса и косинуса суммы и разности</h1>
+            <p class="section-subtitle">Теория, примеры, задачи и тест по формулам углов</p>
+        </header>
+
+        <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="theory">Теория</button>
+                <button class="tab-button" data-tab="practice">Практика</button>
+                <button class="tab-button" data-tab="quiz">Тесты</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="theory" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Формулы суммы и разности аргументов</h2>
+                        <p>Формулы позволяют выражать синус и косинус суммы (или разности) двух углов через произведения тригонометрических функций от отдельных углов:</p>
+
+                        <h3>Формулы синуса</h3>
+                        <p>\[ \sin(\alpha \pm \beta) = \sin \alpha \cdot \cos \beta \pm \cos \alpha \cdot \sin \beta \]</p>
+
+                        <h3>Формулы косинуса</h3>
+                        <p>\[ \cos(\alpha \pm \beta) = \cos \alpha \cdot \cos \beta \mp \sin \alpha \cdot \sin \beta \]</p>
+
+                        <p>Знак в правой части совпадает с левой частью для синуса, но противоположен для косинуса.</p>
+
+                        <h3>Пример применения</h3>
+                        <p>Вычислим \( \sin(75^\circ) \):</p>
+                        <p>\( \sin(75^\circ) = \sin(45^\circ + 30^\circ) = \sin 45^\circ \cos 30^\circ + \cos 45^\circ \sin 30^\circ \)</p>
+                        <p>Подставляем значения:</p>
+                        <p>\( \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{6} + \sqrt{2}}{4} \)</p>
+
+                        <h3>Полезно знать</h3>
+                        <ul>
+                            <li>Формулы позволяют решать уравнения и преобразовывать выражения</li>
+                            <li>Можно использовать при построении графиков</li>
+                            <li>Часто применяются в задачах ЕГЭ и ЦТ</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div id="practice" class="tab-pane">
+                    <div class="practice-content">
+                        <h2>Практические задания</h2>
+
+                        <div class="task-card">
+                            <h3>1. Вычислите значения</h3>
+                            <ol>
+                                <li>\( \sin(15^\circ) \)</li>
+                                <li>\( \cos(75^\circ) \)</li>
+                                <li>\( \sin(105^\circ) \)</li>
+                            </ol>
+                            <p>Разложите каждый угол на сумму или разность табличных значений (30°, 45°, 60°).</p>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>2. Преобразуйте выражения</h3>
+                            <ol>
+                                <li>\( \cos(x + y) + \cos(x - y) \)</li>
+                                <li>\( \sin(x + y) - \sin(x - y) \)</li>
+                            </ol>
+                            <p>Используйте формулы суммы/разности углов.</p>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>3. Решите уравнение</h3>
+                            <p>\( \sin(x + 30^\circ) = \frac{1}{2} \)</p>
+                            <p>Решите для x ∈ [0°, 360°]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="quiz" class="tab-pane">
+                    <div class="quiz-content">
+                        <h2>Тест: синус и косинус суммы/разности</h2>
+
+                        <div class="quiz-question">
+                            <p><strong>1. Чему равен \( \cos(\alpha + \beta) \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q1" value="0"> \( \cos \alpha \cdot \cos \beta + \sin \alpha \cdot \sin \beta \)</label></li>
+                                <li><label><input type="radio" name="q1" value="1"> \( \cos \alpha \cdot \cos \beta - \sin \alpha \cdot \sin \beta \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( \cos \alpha - \cos \beta \)</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>2. Верно ли, что \( \sin(\alpha - \beta) = \sin \alpha \cos \beta - \cos \alpha \sin \beta \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q2" value="1"> Да</label></li>
+                                <li><label><input type="radio" name="q2" value="0"> Нет</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>3. Найдите значение \( \sin(60^\circ + 30^\circ) \)</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q3" value="0"> \( \frac{\sqrt{2}}{2} \)</label></li>
+                                <li><label><input type="radio" name="q3" value="1"> \( 1 \)</label></li>
+                                <li><label><input type="radio" name="q3" value="0"> \( \frac{\sqrt{3}}{2} \)</label></li>
+                            </ul>
+                        </div>
+
+                        <button id="check-quiz">Проверить</button>
+                        <p id="quiz-result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по математике 10 класса</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</body>
+
+</html>

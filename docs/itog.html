@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итоговая самооценка по тригонометрии</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .rating-scale {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .rating-item {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 18%;
+        }
+        .self-assessment-form {
+            margin: 30px 0;
+        }
+        .topic-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .results {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+    <div class="container">
+        <header class="section-header">
+            <h1>Итоговая самооценка по разделу "Тригонометрия"</h1>
+            <p class="section-subtitle">Оцените свои знания и умения по изученным темам</p>
+        </header>
+
+                <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="self-assessment">Самооценка</button>
+                <button class="tab-button" data-tab="practice">Практические задания</button>
+            </div>
+        <div class="content-tabs">
+            <div class="tab-content">
+                <div id="self-assessment" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Шкала оценки</h2>
+                        <p>Пожалуйста, оцените свои знания по каждой теме по следующей шкале:</p>
+                        
+                        <div class="rating-scale">
+                            <div class="rating-item">
+                                <strong>1</strong><br>
+                                Не понимаю тему
+                            </div>
+                            <div class="rating-item">
+                                <strong>2</strong><br>
+                                Понимаю частично
+                            </div>
+                            <div class="rating-item">
+                                <strong>3</strong><br>
+                                Понимаю, но есть вопросы
+                            </div>
+                            <div class="rating-item">
+                                <strong>4</strong><br>
+                                Хорошо понимаю
+                            </div>
+                            <div class="rating-item">
+                                <strong>5</strong><br>
+                                Полностью понимаю и могу применять
+                            </div>
+                        </div>
+
+                        <div class="self-assessment-form">
+                            <h2>Темы раздела "Тригонометрия"</h2>
+                            
+                            <div class="topic-item">
+                                <h3>1. Единичная окружность</h3>
+                                <p>Определение, связь с тригонометрическими функциями</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>2. Синус и косинус</h3>
+                                <p>Определения, основные свойства, значения для основных углов</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>3. Тангенс и котангенс</h3>
+                                <p>Определения, свойства, связь с синусом и косинусом</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>4. Тригонометрические тождества</h3>
+                                <p>Основные тождества, доказательства, применение</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>5. Тригонометрические функции</h3>
+                                <p>Графики, свойства, преобразования графиков</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>6. Обратные тригонометрические функции</h3>
+                                <p>Определения, свойства, графики</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>7. Тригонометрические уравнения</h3>
+                                <p>Методы решения, основные типы уравнений</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>8. Формулы приведения</h3>
+                                <p>Правила применения, мнемонические правила</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>9. Формулы сложения</h3>
+                                <p>Синус/косинус суммы и разности, вывод и применение</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>10. Формулы двойного аргумента</h3>
+                                <p>Вывод, применение в преобразованиях и уравнениях</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="topic-item">
+                                <h3>11. Преобразование суммы в произведение</h3>
+                                <p>Формулы, применение в вычислениях и уравнениях</p>
+                                <select class="rating-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <button id="calculate-btn" class="btn-primary">Подвести итоги</button>
+                        </div>
+                        
+                        <div class="results" id="results">
+                            <h2>Результаты самооценки</h2>
+                            <p><strong>Общий балл:</strong> <span id="total-score">0</span> из 55</p>
+                            <p><strong>Процент освоения:</strong> <span id="percentage">0</span>%</p>
+                            <p><strong>Уровень подготовки:</strong> <span id="level">не определён</span></p>
+                            
+                            <h3>Рекомендации:</h3>
+                            <ul id="recommendations">
+                                <li>Пройдите темы, которые вы оценили на 1-2 балла</li>
+                                <li>Повторите темы с оценкой 3 балла</li>
+                                <li>Закрепите знания по темам с оценкой 4-5 баллов</li>
+                            </ul>
+                        </div>
+                    
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div id="practice" class="tab-pane">
+                    <div class="practice-tasks">
+                        <h2>Практические задания по тригонометрии</h2>
+                        
+                        <div class="task-card">
+                            <h3>Задание 1. Вычисление значений</h3>
+                            <p>Вычислите: \( \sin\frac{5\pi}{6} + \cos\frac{3\pi}{4} - \tan\frac{\pi}{3} \)</p>
+                            
+                        </div>
+
+                        <div class="task-card">
+                            <h3>Задание 2. Упрощение выражения</h3>
+                            <p>Упростите выражение: \( \frac{\sin x}{1 + \cos x} + \frac{1 + \cos x}{\sin x} \)</p>
+                            
+                        </div>
+
+                        <div class="task-card">
+                            <h3>Задание 3. Решение уравнения</h3>
+                            <p>Решите уравнение: \( 2\sin^2 x - 5\sin x + 2 = 0 \)</p>
+                           
+                        </div>
+
+                        <div class="task-card">
+                            <h3>Задание 4. Доказательство тождества</h3>
+                            <p>Докажите тождество: \( \frac{1 - \cos 2x}{\sin 2x} = \tan x \)</p>
+                            
+                        </div>
+
+                        <div class="task-card">
+                            <h3>Задание 5. Преобразование суммы в произведение</h3>
+                            <p>Преобразуйте в произведение: \( \sin 5x + \sin 3x \)</p>
+                           
+                        </div>
+
+                        <div class="task-card">
+                            <h3>Задание 6. Нахождение периода функции</h3>
+                            <p>Найдите период функции: \( y = \sin 3x \cos 5x \)</p>
+                           
+                             
+                        </div>
+
+                        <div class="task-card">
+                            <h3>Задание 7. Решение неравенства</h3>
+                            <p>Решите неравенство: \( \cos x \geq -\frac{\sqrt{2}}{2} \) на промежутке \( [0; 2\pi] \)</p>
+                            
+                             
+                        </div>
+
+                        <div class="task-card">
+                            <h3>Задание 8. Обратные тригонометрические функции</h3>
+                            <p>Вычислите: \( \sin(2\arctan\frac{3}{4}) \)</p>
+                            
+                        </div>
+
+                        <div class="task-card">
+                            <h3>Задание 9. Графики функций</h3>
+                            <p>Постройте график функции \( y = 2\sin(x - \frac{\pi}{3}) + 1 \)</p>
+                           
+                        </div>
+
+                        <div class="task-card">
+                            <h3>Задание 10. Комплексное задание</h3>
+                            <p>Решите уравнение: \( \sin x + \sqrt{3}\cos x = 1 \)</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по математике 10 класса, 2025</p>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <script>
+
+        // Переключение вкладок
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const tabId = this.getAttribute('data-tab');
+                
+                // Скрыть все вкладки
+                document.querySelectorAll('.tab-pane').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                
+                // Показать выбранную вкладку
+                document.getElementById(tabId).classList.add('active');
+                
+                // Обновить активную кнопку
+                document.querySelectorAll('.tab-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+        <footer>
+            <p>© Учебная программа по математике 10 класса, 2025</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('calculate-btn').addEventListener('click', function() {
+            const selects = document.querySelectorAll('.rating-select');
+            let total = 0;
+            
+            selects.forEach(select => {
+                total += parseInt(select.value);
+            });
+            
+            const percentage = Math.round((total / (selects.length * 5)) * 100);
+            let level = '';
+            
+            if (percentage < 40) {
+                level = 'Неудовлетворительно';
+            } else if (percentage < 60) {
+                level = 'Удовлетворительно';
+            } else if (percentage < 80) {
+                level = 'Хорошо';
+            } else {
+                level = 'Отлично';
+            }
+            
+            document.getElementById('total-score').textContent = total;
+            document.getElementById('percentage').textContent = percentage;
+            document.getElementById('level').textContent = level;
+            
+            // Генерация рекомендаций
+            const recommContainer = document.getElementById('recommendations');
+            recommContainer.innerHTML = '';
+            
+            if (percentage < 40) {
+                recommContainer.innerHTML += '<li>Вам необходимо серьезно поработать над основными понятиями тригонометрии</li>';
+                recommContainer.innerHTML += '<li>Начните с изучения единичной окружности и определений тригонометрических функций</li>';
+            } else if (percentage < 60) {
+                recommContainer.innerHTML += '<li>Вам стоит повторить основные формулы и свойства тригонометрических функций</li>';
+                recommContainer.innerHTML += '<li>Обратите особое внимание на темы, которые вы оценили ниже 3 баллов</li>';
+            } else if (percentage < 80) {
+                recommContainer.innerHTML += '<li>Ваши знания хорошие, но есть темы, требующие дополнительного внимания</li>';
+                recommContainer.innerHTML += '<li>Потренируйтесь в решении более сложных задач, особенно по темам с оценкой 3 балла</li>';
+            } else {
+                recommContainer.innerHTML += '<li>Поздравляем! Ваши знания тригонометрии на высоком уровне</li>';
+                recommContainer.innerHTML += '<li>Для совершенствования можете перейти к более сложным приложениям тригонометрии</li>';
+            }
+            
+            recommContainer.innerHTML += '<li>Используйте материалы учебника и дополнительные ресурсы для повторения</li>';
+            recommContainer.innerHTML += '<li>Решайте больше практических задач для закрепления материала</li>';
+            
+            document.getElementById('results').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Единичная окружность и меры углов</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+    <div class="container">
+        <header class="section-header">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span> 1. Единичная окружность</span>
+            </nav>
+            <h1>1. Единичная окружность. Градусная и радианная мера произвольного угла</h1>
+            <p class="section-subtitle">Теоретические основы и практические задания по теме</p>
+        </header>
+
+        <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="theory">Теория</button>
+                <button class="tab-button" data-tab="practice">Практика</button>
+                <button class="tab-button" data-tab="quiz">Тесты</button>
+
+            </div>
+
+            <div class="tab-content">
+                <div id="theory" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Что такое единичная окружность?</h2>
+                        <p><strong>Единичная окружность</strong> — это окружность радиуса 1 с центром в начале координат
+                            (точка O(0, 0)). Она задаётся уравнением:</p>
+                        <p>\[ x^2 + y^2 = 1 \]</p>
+                        <p>Каждой точке на окружности соответствует определённый угол, отсчитываемый от положительного
+                            направления оси Ox.</p>
+
+                        <div class="unit-circle-diagram">
+                            <img src="img/Unit_circle_angles_color.svg" alt="Единичная окружность"
+                                class="circle-image">
+                            <p class="img-caption">Рис. 1. Единичная окружность. На рисунке показаны углы в радианах и
+                                градусах, а также значения синуса и косинуса для типичных углов.</p>
+                        </div>
+
+                        <h3>Тригонометрические функции на единичной окружности</h3>
+                        <p>Если отложить угол \( \alpha \) от оси Ox против часовой стрелки и провести радиус к точке A
+                            на окружности, то координаты этой точки равны:</p>
+                        <p>\[ A(x, y) = (\cos \alpha, \sin \alpha) \]</p>
+                        <ul>
+                            <li>\( \cos \alpha \) — абсцисса точки A (значение по оси x)</li>
+                            <li>\( \sin \alpha \) — ордината точки A (значение по оси y)</li>
+                        </ul>
+                        <p>Таким образом, единичная окружность позволяет определять значения синуса и косинуса для любых
+                            углов.</p>
+
+                        <h2>Градусная и радианная мера угла</h2>
+                        <p>Углы можно измерять в двух единицах: <strong>градусах</strong> и <strong>радианах</strong>.
+                        </p>
+
+                        <h3>1. Градусная мера</h3>
+                        <p>Один полный оборот соответствует 360 градусам:</p>
+                        <p>\[ 1\ \text{оборот} = 360^\circ \]</p>
+                        <p>Пример: угол \( 90^\circ \) — это четверть окружности.</p>
+
+                        <h3>2. Радианная мера</h3>
+                        <p><strong>Радиан</strong> — это центральный угол, длина дуги которого равна радиусу окружности.
+                            На единичной окружности радиус равен 1, поэтому длина дуги численно равна углу в радианах.
+                        </p>
+                        <p>\[ 1\ \text{оборот} = 2\pi \ \text{рад} \quad \text{(полная длина окружности)} \]</p>
+                        <p>Связь между градусами и радианами:</p>
+                        <ul>
+                            <li>\( 180^\circ = \pi \ \text{рад} \)</li>
+                            <li>\( 1^\circ = \dfrac{\pi}{180} \ \text{рад} \)</li>
+                            <li>\( 1 \ \text{рад} = \dfrac{180^\circ}{\pi} \)</li>
+                        </ul>
+                        <p>Примеры:</p>
+                        <ul>
+                            <li>\( 90^\circ = \dfrac{\pi}{2} \ \text{рад} \)</li>
+                            <li>\( 60^\circ = \dfrac{\pi}{3} \ \text{рад} \)</li>
+                            <li>\( 45^\circ = \dfrac{\pi}{4} \ \text{рад} \)</li>
+                        </ul>
+
+                        <h3>3. Направление отсчёта углов</h3>
+                        <ul>
+                            <li>Если угол отсчитывается <strong>против часовой стрелки</strong> — он считается
+                                положительным</li>
+                            <li>Если <strong>по часовой стрелке</strong> — он считается отрицательным</li>
+                        </ul>
+                        <p>На единичной окружности можно откладывать углы больше 360° (или \( 2\pi \)) и отрицательные
+                            углы.</p>
+
+                        <h3>4. Повторяющиеся значения</h3>
+                        <p>Поскольку единичная окружность — замкнутая фигура, углы, отличающиеся на полный оборот (360°
+                            или \( 2\pi \)), соответствуют одной и той же точке.</p>
+                        <p>\[ \sin(\alpha + 2\pi n) = \sin \alpha \quad \cos(\alpha + 2\pi n) = \cos \alpha \]</p>
+                        <p>где \( n \in \mathbb{Z} \)</p>
+
+                        <h3>5. Основное тригонометрическое тождество</h3>
+                        <p>Так как точка \( (\cos \alpha, \sin \alpha) \) лежит на окружности радиуса 1:</p>
+                        <p>\[ \cos^2 \alpha + \sin^2 \alpha = 1 \]</p>
+                        <p>Это соотношение справедливо для любого угла и часто используется при преобразовании
+                            выражений.</p>
+                    </article>
+
+                </div>
+
+                <div id="practice" class="tab-pane">
+                    <pract class="practice-content">
+                        <h2>Практическое задание</h2>
+                        <div class="task-card">
+                            <h3>1. Перевод градусов в радианы</h3>
+                            <p>Переведите следующие углы в радианы:</p>
+                            <ol class="task-steps">
+                                <li>\( 30^\circ \)</li>
+                                <li>\( 90^\circ \)</li>
+                                <li>\( 150^\circ \)</li>
+                                <li>\( -60^\circ \)</li>
+                            </ol>
+                            <p><strong>Формула:</strong> \( \alpha \text{ (в рад)} = \alpha^\circ \cdot
+                                \frac{\pi}{180}\)</p>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>2. Определение координат точки на единичной окружности</h3>
+                            <p>Найдите координаты точки, соответствующей углу:</p>
+                            <ol class="task-steps">
+                                <li>\( \alpha = 0^\circ \)</li>
+                                <li>\( \alpha = 90^\circ \)</li>
+                                <li>\( \alpha = 180^\circ \)</li>
+                                <li>\( \alpha = 270^\circ \)</li>
+                            </ol>
+                            <p>Используйте: \( x = \cos \alpha, \quad y = \sin \alpha \)</p>
+                        </div>
+                    </pract>
+                </div>
+                <div id="quiz" class="tab-pane">
+                    <div class="quiz-content">
+                        <h2>Тест по теме "Единичная окружность и меры углов"</h2>
+
+                        <div class="quiz-question">
+                            <p><strong>1. Чему равен угол в радианах, соответствующий 180°?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q1" value="0"> \( \frac{\pi}{2} \)</label></li>
+                                <li><label><input type="radio" name="q1" value="1"> \( \pi \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( 2\pi \)</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>2. Какая точка соответствует углу \( \alpha = 0^\circ \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q2" value="0"> \( (0, 1) \)</label></li>
+                                <li><label><input type="radio" name="q2" value="1"> \( (1, 0) \)</label></li>
+                                <li><label><input type="radio" name="q2" value="0"> \( (0, -1) \)</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>3. Как записывается основное тригонометрическое тождество?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q3" value="0"> \( \sin \alpha + \cos \alpha = 1
+                                        \)</label></li>
+                                <li><label><input type="radio" name="q3" value="1"> \( \sin^2 \alpha + \cos^2 \alpha = 1
+                                        \)</label></li>
+                                <li><label><input type="radio" name="q3" value="0"> \( \tan^2 \alpha + 1 = \sec^2 \alpha
+                                        \)</label></li>
+                            </ul>
+                        </div>
+
+                        <button id="check-quiz">Проверить</button>
+                        <p id="quiz-result"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по математике 10 класса</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    </script>
+    
+
+</body>
+
+</html>

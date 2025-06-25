@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формулы двойного аргумента</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+
+    <div class="container">
+        <header class="section-header">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span> 11. Формулы двойного аргумента</span>
+            </nav>
+            <h1>11. Формулы двойного аргумента</h1>
+            <p class="section-subtitle">Преобразование выражений с тригонометрическими функциями от двойного угла</p>
+        </header>
+
+        <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="theory">Теория</button>
+                <button class="tab-button" data-tab="practice">Практика</button>
+                <button class="tab-button" data-tab="quiz">Тесты</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="theory" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Формулы двойного аргумента</h2>
+                        <p>Формулы двойного аргумента позволяют выразить тригонометрические функции от двойного угла через функции одного угла.</p>
+
+                        <h3>Основные формулы</h3>
+                        <ul>
+                            <li>\[ \sin(2x) = 2\sin x \cos x \]</li>
+                            <li>\[ \cos(2x) = \cos^2 x - \sin^2 x \]</li>
+                            <li>\[ \cos(2x) = 2\cos^2 x - 1 \]</li>
+                            <li>\[ \cos(2x) = 1 - 2\sin^2 x \]</li>
+                            <li>\[ tg(2x) = \frac{2tg x}{1 - tg^2 x}, \quad \text{если } tg x \ne \pm1 \]</li>
+                        </ul>
+
+                        <h3>Применение формул</h3>
+                        <ul>
+                            <li>Преобразование тригонометрических выражений</li>
+                            <li>Решение уравнений</li>
+                            <li>Построение графиков</li>
+                        </ul>
+
+                        <h3>Пример</h3>
+                        <p>Пусть \( \sin x = \frac{3}{5}, \quad \cos x = \frac{4}{5} \). Тогда:</p>
+                        <p>\[ \sin(2x) = 2 \cdot \frac{3}{5} \cdot \frac{4}{5} = \frac{24}{25} \]</p>
+                        <p>\[ \cos(2x) = \cos^2 x - \sin^2 x = \frac{16}{25} - \frac{9}{25} = \frac{7}{25} \]</p>
+                    </article>
+                </div>
+
+                <div id="practice" class="tab-pane">
+                    <div class="practice-content">
+                        <h2>Практическое задание</h2>
+
+                        <div class="task-card">
+                            <h3>1. Вычислите значения</h3>
+                            <ol>
+                                <li>\( \sin(2 \cdot 30^\circ) \)</li>
+                                <li>\( \cos(2 \cdot 45^\circ) \)</li>
+                                <li>\( tg(2 \cdot 60^\circ) \)</li>
+                            </ol>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>2. Упростите выражения</h3>
+                            <ol>
+                                <li>\( \cos(2x) + 1 \)</li>
+                                <li>\( 1 - \cos(2x) \)</li>
+                                <li>\( \frac{1 - \cos(2x)}{2} \)</li>
+                            </ol>
+                            <p>Подсказка: используйте эквивалентные формы \( \cos(2x) \).</p>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>3. Решите уравнение</h3>
+                            <p>\( \sin(2x) = \frac{\sqrt{3}}{2} \)</p>
+                            <p>Найдите все решения на интервале \( [0; 2\pi] \).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="quiz" class="tab-pane">
+                    <div class="quiz-content">
+                        <h2>Тест: Формулы двойного угла</h2>
+
+                        <div class="quiz-question">
+                            <p><strong>1. Как выражается \( \sin(2x) \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q1" value="1"> \( 2\sin x \cos x \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( \sin^2 x + \cos^2 x \)</label></li>
+                                <li><label><input type="radio" name="q1" value="0"> \( \sin x + \cos x \)</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>2. Какой из вариантов эквивалентен \( \cos(2x) \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q2" value="1"> \( 2\cos^2 x - 1 \)</label></li>
+                                <li><label><input type="radio" name="q2" value="0"> \( 2\sin x \cos x \)</label></li>
+                                <li><label><input type="radio" name="q2" value="0"> \( 1 + 2\cos x \)</label></li>
+                            </ul>
+                        </div>
+
+                        <div class="quiz-question">
+                            <p><strong>3. Чему равно \( tg(2x) \)?</strong></p>
+                            <ul>
+                                <li><label><input type="radio" name="q3" value="1"> \( \frac{2tg x}{1 - tg^2 x} \)</label></li>
+                                <li><label><input type="radio" name="q3" value="0"> \( 2tg x \)</label></li>
+                                <li><label><input type="radio" name="q3" value="0"> \( tg^2 x - 1 \)</label></li>
+                            </ul>
+                        </div>
+
+                        <button id="check-quiz">Проверить</button>
+                        <p id="quiz-result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по математике 10 класса</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</body>
+
+</html>

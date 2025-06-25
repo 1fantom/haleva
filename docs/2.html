@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Синус и косинус произвольного угла</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['\\[', '\\]'], ['$$', '$$']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+</head>
+
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+  <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+  <div class="container">
+    <header class="section-header">
+      <nav class="breadcrumbs">
+        <a href="index.html">Главная</a> <span> 2. Синус и косинус произвольного угла</span>
+      </nav>
+      <h1>2. Определение синуса и косинуса произвольного угла</h1>
+      <p class="section-subtitle">Понятие синуса и косинуса для произвольных углов, использование единичной окружности</p>
+    </header>
+
+    <div class="content-tabs">
+      <div class="tab-buttons">
+        <button class="tab-button active" data-tab="theory">Теория</button>
+        <button class="tab-button" data-tab="practice">Практика</button>
+        <button class="tab-button" data-tab="quiz">Тесты</button>
+        
+      </div>
+
+      <div class="tab-content">
+        <div id="theory" class="tab-pane active">
+          <article class="theory-content">
+            <h2>Синус и косинус произвольного угла</h2>
+            <p>Для произвольного угла \( \alpha \) синус и косинус определяются как координаты точки на единичной окружности:</p>
+            <p>\[ \cos \alpha = x, \quad \sin \alpha = y \]</p>
+            <p>где точка получена поворотом радиуса на угол \( \alpha \) от положительного направления оси Ox.</p>
+
+            <img src="img/картинка2.svg" alt="Единичная окружность" class="circle-image" />
+            <p class="img-caption">Рис. 1. Координаты точки на окружности при угле \( \alpha \)</p>
+
+            <h3>Знаки функций в квадрантах</h3>
+            <ul>
+              <li>I четверть: \( \sin \alpha > 0, \quad \cos \alpha > 0 \)</li>
+              <li>II четверть: \( \sin \alpha > 0, \quad \cos \alpha < 0 \)</li>
+              <li>III четверть: \( \sin \alpha < 0, \quad \cos \alpha < 0 \)</li>
+              <li>IV четверть: \( \sin \alpha < 0, \quad \cos \alpha > 0 \)</li>
+            </ul>
+
+            <h3>Периодичность</h3>
+            <p>\[ \sin(\alpha + 2\pi) = \sin \alpha, \quad \cos(\alpha + 2\pi) = \cos \alpha \]</p>
+
+            <h3>Чётность и нечётность</h3>
+            <p>\[ \cos(-\alpha) = \cos \alpha \quad \text{(чётная функция)} \]</p>
+            <p>\[ \sin(-\alpha) = -\sin \alpha \quad \text{(нечётная функция)} \]</p>
+          </article>
+        </div>
+
+        <div id="practice" class="tab-pane">
+          <div class="practice-content">
+            <h2>Практическое задание</h2>
+
+            <div class="task-card">
+              <h3>1. Определение знаков синуса и косинуса</h3>
+              <p>Укажите знаки функций для следующих углов:</p>
+              <ol>
+                <li>\( \alpha = 120^\circ \)</li>
+                <li>\( \alpha = 210^\circ \)</li>
+                <li>\( \alpha = 315^\circ \)</li>
+              </ol>
+            </div>
+
+            <div class="task-card">
+              <h3>2. Вычисление значений</h3>
+              <p>Найдите значения синуса и косинуса углов:</p>
+              <ol>
+                <li>\( \alpha = 0^\circ \)</li>
+                <li>\( \alpha = 90^\circ \)</li>
+                <li>\( \alpha = 180^\circ \)</li>
+                <li>\( \alpha = 270^\circ \)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div id="quiz" class="tab-pane">
+          <div class="quiz-content">
+            <h2>Тест по теме "Синус и косинус произвольного угла"</h2>
+
+            <div class="quiz-question">
+              <p><strong>1. Какое значение принимает \( \cos(0^\circ) \)?</strong></p>
+              <ul>
+                <li><label><input type="radio" name="q1" value="1"> 1</label></li>
+                <li><label><input type="radio" name="q1" value="0"> 0</label></li>
+                <li><label><input type="radio" name="q1" value="0"> -1</label></li>
+              </ul>
+            </div>
+
+            <div class="quiz-question">
+              <p><strong>2. В какой четверти угол \( 240^\circ \)?</strong></p>
+              <ul>
+                <li><label><input type="radio" name="q2" value="0"> II</label></li>
+                <li><label><input type="radio" name="q2" value="1"> III</label></li>
+                <li><label><input type="radio" name="q2" value="0"> IV</label></li>
+              </ul>
+            </div>
+
+            <div class="quiz-question">
+              <p><strong>3. Какое тождество верно?</strong></p>
+              <ul>
+                <li><label><input type="radio" name="q3" value="1"> \( \sin^2 \alpha + \cos^2 \alpha = 1 \)</label></li>
+                <li><label><input type="radio" name="q3" value="0"> \( \sin \alpha + \cos \alpha = 1 \)</label></li>
+                <li><label><input type="radio" name="q3" value="0"> \( \cos \alpha - \sin \alpha = 0 \)</label></li>
+              </ul>
+            </div>
+
+            <button id="check-quiz">Проверить</button>
+            <p id="quiz-result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© Учебная программа по математике 10 класса</p>
+    </footer>
+  </div>
+<script src="js/script.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</body>
+
+</html>

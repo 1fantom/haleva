@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тригонометрические тождества</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+    <div class="container">
+        <header class="section-header">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>4. Тождества</span>
+            </nav>
+            <h1>Тригонометрические тождества</h1>
+            <p class="section-subtitle">Основные и производные тождества тригонометрии</p>
+        </header>
+
+        <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="theory">Теория</button>
+                <button class="tab-button" data-tab="practice">Практика</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="theory" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Основные тригонометрические тождества</h2>
+                        <p>Тождество — это равенство, справедливое при всех значениях переменных. В тригонометрии существует несколько базовых тождеств, которые широко применяются в преобразованиях и решении уравнений.</p>
+                        <h3>1. Основное тригонометрическое тождество</h3>
+                        <p style="text-align: center;"><strong>sin²x + cos²x = 1</strong></p>
+
+                        <h3>2. Тождества, связанные с тангенсом и котангенсом</h3>
+                        <p style="text-align: center;">
+                            <strong>1 + tg²x = 1 / cos²x</strong><br>
+                            <strong>1 + ctg²x = 1 / sin²x</strong>
+                        </p>
+
+                        <h3>3. Тождества для отрицательных аргументов</h3>
+                        <ul>
+                            <li>sin(–x) = –sin(x)</li>
+                            <li>cos(–x) = cos(x)</li>
+                            <li>tg(–x) = –tg(x)</li>
+                            <li>ctg(–x) = –ctg(x)</li>
+                        </ul>
+
+                        <h3>4. Тождества чётности и нечётности</h3>
+                        <ul>
+                            <li>sin(x) — функция нечётная</li>
+                            <li>cos(x) — функция чётная</li>
+                            <li>tg(x), ctg(x) — функции нечётные</li>
+                        </ul>
+
+                        <h3>5. Периодичность</h3>
+                        <ul>
+                            <li>sin(x) и cos(x) имеют период 2π</li>
+                            <li>tg(x) и ctg(x) имеют период π</li>
+                        </ul>
+
+                        <h3>6. Примеры преобразований</h3>
+                        <p>Преобразуем выражение:</p>
+                        <p style="text-align: center;"><strong>1 – cos²x = sin²x</strong></p>
+                        <p>Это следствие основного тождества.</p>
+                    </article>
+                </div>
+
+                <div id="practice" class="tab-pane">
+                    <div class="practice-content">
+                        <h2>Практическое задание</h2>
+                        <div class="task-card">
+                            <h3>1. Выберите верные тождества:</h3>
+                            <ul>
+                                <li>sin²x + cos²x = 1</li>
+                                <li>1 – sin²x = cos²x</li>
+                                <li>1 + tg²x = 1 / cos²x</li>
+                                <li>cos(x) = –cos(–x)</li>
+                            </ul>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>2. Упростите выражения:</h3>
+                            <ol>
+                                <li>(1 – sin²x)(1 + tg²x)</li>
+                                <li>tg²x – 1 / tg²x</li>
+                                <li>cos²x – sin²x</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по тригонометрии, 2025</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

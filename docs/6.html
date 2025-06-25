@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функции y = tg(x) и y = ctg(x)</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* мини-стили только для этой страницы */
+        .graph-images {display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin:20px 0;}
+        .graph-images img {max-width:340px;width:100%;border:1px solid #ddd;border-radius:6px;}
+        #tanCanvas {display:block;margin:0 auto 20px;border:1px solid #ccc;background:#fafafa;}
+    </style>
+</head>
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <!-- ==== боковое меню ==== -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+
+    <div class="container">
+        <header class="section-header">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Главная</a> / <span>6. Функции y = tg(x) и y = ctg(x)</span>
+            </nav>
+            <h1>Функции y = tg(x) и y = ctg(x)</h1>
+            <p class="section-subtitle">Свойства, графики, анимация и практика</p>
+        </header>
+
+        <!-- === вкладки === -->
+        <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="theory">Теория</button>
+                <button class="tab-button" data-tab="practice">Практика</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- -------- ТЕОРИЯ -------- -->
+                <div id="theory" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Определения и тождества</h2>
+                        <p style="text-align:center"><strong>tg x = sin x / cos x &nbsp;&nbsp;  |  &nbsp;&nbsp; ctg x = cos x / sin x</strong></p>
+
+                        <h3>Графическое представление функций</h3>
+                        <div class="graph-images">
+                            <!-- замените пути на свои изображения -->
+                            <img src="img/tan_graph.jfif" alt="График y = tg(x)">
+                            <img src="img/ctg_graph.jfif" alt="График y = ctg(x)">
+                        </div>
+
+                        <h3>Мини-анимация tg x</h3>
+                        <canvas id="tanCanvas" width="400" height="280"></canvas>
+                        <p style="text-align:center;font-size:0.9em;">Точка движется по графику y = tg x (диапазон –π/2 … π/2)</p>
+
+                        <h3>Основные тождества</h3>
+                        <p style="text-align:center">
+                            <strong>1 + tg²x = 1 / cos²x</strong><br>
+                            <strong>1 + ctg²x = 1 / sin²x</strong>
+                        </p>
+
+                        <h3>Свойства</h3>
+                        <ul>
+                            <li>Период π, обе функции нечётные</li>
+                            <li>tg x не определена при x = π/2 + πn; ctg x – при x = πn</li>
+                            <li>Вертикальные асимптоты совпадают с точками, где функции не определены</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <!-- -------- ПРАКТИКА -------- -->
+                <div id="practice" class="tab-pane">
+                    <div class="practice-content">
+                        <h2>Практическое задание</h2>
+
+                        <div class="task-card">
+                            <h3>1. Таблица значений</h3>
+                            <p>Заполните таблицу, вычислив tg x и ctg x:</p>
+                            <table>
+                                <thead><tr><th>x</th><th>tg x</th><th>ctg x</th></tr></thead>
+                                <tbody>
+                                    <tr><td>π/6</td><td></td><td></td></tr>
+                                    <tr><td>π/4</td><td></td><td></td></tr>
+                                    <tr><td>π/3</td><td></td><td></td></tr>
+                                    <tr><td>2π/3</td><td></td><td></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>2. Упрощение выражений</h3>
+                            <ol>
+                                <li>(1 + tg²x)(1 – sin²x)</li>
+                                <li>tg x · ctg x</li>
+                                <li>tg²x – 1</li>
+                                <li>ctg²x – cos²x / sin²x</li>
+                            </ol>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>3. Решите уравнения</h3>
+                            <ol>
+                                <li>tg x = √3, 0 ≤ x &lt; 2π</li>
+                                <li>ctg x = –1, 0 ≤ x &lt; 2π</li>
+                                <li>tg 2x = 1, 0 ≤ x &lt; π</li>
+                            </ol>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>4. Исследуйте графики</h3>
+                            <p>Используя анимацию выше, опишите, как меняется знак tg x при переходе из I в II четверть и где располагаются вертикальные асимптоты.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по тригонометрии, 2025</p>
+        </footer>
+    </div>
+
+    <!-- ===== JS: переключение вкладок + анимация ===== -->
+    <script src="js/script.js"></script>
+    <script>
+        /* анимация точки по y = tg x в диапазоне -π/2..π/2 */
+        const cvs = document.getElementById('tanCanvas');
+        const ctx = cvs.getContext('2d');
+        const w = cvs.width, h = cvs.height;
+        const scaleX = w / Math.PI, scaleY = h / 4;   // подгоняем масштаб
+        let t = -Math.PI / 2 + 0.01;                  // стартовое x
+        function drawAxis() {
+            ctx.strokeStyle = '#666';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(0, h/2);
+            ctx.lineTo(w, h/2);        // ось X
+            ctx.moveTo(w/2, 0);
+            ctx.lineTo(w/2, h);        // ось Y
+            ctx.stroke();
+        }
+        function animate() {
+            ctx.clearRect(0, 0, w, h);
+            drawAxis();
+            const y = Math.tan(t);
+            if (Math.abs(y) < 10) {    // не рисуем точку, если далеко
+                const px = w/2 + t * scaleX;
+                const py = h/2 - y * scaleY;
+                ctx.fillStyle = '#d43';
+                ctx.beginPath();
+                ctx.arc(px, py, 4, 0, 2*Math.PI);
+                ctx.fill();
+            }
+            t += 0.02;
+            if (t >= Math.PI/2) t = -Math.PI/2 + 0.01;
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+</body>
+</html>

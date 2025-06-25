@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функции y = sin(x) и y = cos(x)</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="open-btn" onclick="openNav()">☰ Меню</div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+        <a href="index.html">Главная</a>
+        <a href="1.html">1. Единичная окружность</a>
+        <a href="2.html">2. Синус и косинус</a>
+        <a href="3.html">3. Тангенс и котангенс</a>
+        <a href="4.html">4. Тригонометрические тождества</a>
+        <a href="5.html">5. Функции y=sin(x) и y=cos(x)</a>
+        <a href="6.html">6. Функции y=tg(x) и y=ctg(x)</a>
+        <a href="7.html">7. Обратные тригонометрические функции</a>
+        <a href="8.html">8. Тригонометрические уравнения</a>
+        <a href="9.html">9. Формулы приведения</a>
+        <a href="10.html">10. Синус/косинус суммы и разности</a>
+        <a href="11.html">11. Формулы двойного аргумента</a>
+        <a href="12.html">12. Преобразование суммы в произведение</a>
+        <a href="itog.html">Итоговая самооценка</a>
+    </div>
+    <div class="container">
+        <header class="section-header">
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>5. Функции y = sin(x) и y = cos(x)</span>
+            </nav>
+            <h1>Функции y = sin(x) и y = cos(x)</h1>
+            <p class="section-subtitle">Графики, свойства и особенности периодических функций</p>
+        </header>
+
+        <div class="content-tabs">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="theory">Теория</button>
+                <button class="tab-button" data-tab="practice">Практика</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="theory" class="tab-pane active">
+                    <article class="theory-content">
+                        <h2>Графики функций</h2>
+                        <p>Функции y = sin(x) и y = cos(x) — основные периодические функции, которые широко используются в математике и прикладных науках. Их графики имеют волнообразную форму и повторяются с периодом 2π.</p>
+
+                        <h3>График y = sin(x)</h3>
+                        <ul>
+                            <li>Область определения: все действительные числа ℝ</li>
+                            <li>Область значений: [–1; 1]</li>
+                            <li>Период: 2π</li>
+                            <li>Функция нечётная: sin(–x) = –sin(x)</li>
+                            <li>Нули функции: x = πn, где n ∈ ℤ</li>
+                        </ul>
+
+                        <h3>График y = cos(x)</h3>
+                        <ul>
+                            <li>Область определения: все действительные числа ℝ</li>
+                            <li>Область значений: [–1; 1]</li>
+                            <li>Период: 2π</li>
+                            <li>Функция чётная: cos(–x) = cos(x)</li>
+                            <li>Нули функции: x = π/2 + πn, где n ∈ ℤ</li>
+                        </ul>
+
+                        <p>Графики этих функций похожи: они отличаются фазовым сдвигом на π/2. То есть:</p>
+                        <p style="text-align: center;"><strong>cos(x) = sin(x + π/2)</strong></p>
+                    </article>
+                </div>
+
+                <div id="practice" class="tab-pane">
+                    <div class="practice-content">
+                        <h2>Практическое задание</h2>
+                        <div class="task-card">
+                            <h3>1. Заполните таблицу значений</h3>
+                            <p>Вычислите значения функций sin(x) и cos(x) в точках:</p>
+                            <ul>
+                                <li>x = 0</li>
+                                <li>x = π/6</li>
+                                <li>x = π/4</li>
+                                <li>x = π/2</li>
+                                <li>x = π</li>
+                            </ul>
+                        </div>
+
+                        <div class="task-card">
+                            <h3>2. Ответьте на вопросы</h3>
+                            <ol>
+                                <li>Какой период у функции y = sin(x)?</li>
+                                <li>Какова область определения функции y = cos(x)?</li>
+                                <li>Где достигается максимум функции y = sin(x)?</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Учебная программа по тригонометрии, 2025</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

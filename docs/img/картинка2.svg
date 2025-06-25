@@ -1,0 +1,43 @@
+<svg width="360" height="360" viewBox="-2 -2 4 4" xmlns="http://www.w3.org/2000/svg" style="background:#fff; border:1px solid #ccc;">
+
+  <!-- Оси -->
+  <line x1="-1.8" y1="0" x2="1.8" y2="0" stroke="#000" stroke-width="0.02"></line>
+  <line x1="0" y1="-1.8" x2="0" y2="1.8" stroke="#000" stroke-width="0.02"></line>
+
+  <!-- Стрелки на осях -->
+  <polygon points="1.8,0 1.7,0.05 1.7,-0.05" fill="#000"></polygon>
+  <polygon points="0,1.8 0.05,1.7 -0.05,1.7" fill="#000"></polygon>
+
+  <!-- Метки осей -->
+  <text x="1.85" y="0.1" font-family="Times New Roman" font-size="0.18">x</text>
+  <text x="0.1" y="-1.85" font-family="Times New Roman" font-size="0.18">y</text>
+
+  <!-- Единичная окружность -->
+  <circle cx="0" cy="0" r="1" fill="none" stroke="#007acc" stroke-width="0.04"></circle>
+
+  <!-- Дуга угла α -->
+  <path d="M 1 0 A 1 1 0 0 1 0.707 0.707" fill="none" stroke="#cc3300" stroke-width="0.05"></path>
+
+  <!-- Сектор угла α -->
+  <path d="M 0 0 L 1 0 A 1 1 0 0 1 0.707 0.707 Z" fill="#ffdddd" opacity="0.5"></path>
+
+  <!-- Радиус-вектор -->
+  <line x1="0" y1="0" x2="0.707" y2="0.707" stroke="#228833" stroke-width="0.05"></line>
+
+  <!-- Точка на окружности -->
+  <circle cx="0.707" cy="0.707" r="0.06" fill="#228833"></circle>
+
+  <!-- Проекция на Ox (cos α) -->
+  <line x1="0" y1="0" x2="0.707" y2="0" stroke="#ff6600" stroke-width="0.035" stroke-dasharray="0.07 0.07"></line>
+  <circle cx="0.707" cy="0" r="0.045" fill="#ff6600"></circle>
+  <text x="0.35" y="-0.18" font-family="Times New Roman" font-size="0.16" fill="#ff6600">cos α</text>
+
+  <!-- Проекция на Oy (sin α) -->
+  <line x1="0.707" y1="0" x2="0.707" y2="0.707" stroke="#800080" stroke-width="0.035" stroke-dasharray="0.07 0.07"></line>
+  <circle cx="0" cy="0.707" r="0.045" fill="#800080"></circle>
+  <text x="-0.5" y="0.75" font-family="Times New Roman" font-size="0.16" fill="#800080">sin α</text>
+
+  <!-- Обозначение угла α -->
+  <text x="0.3" y="0.17" font-family="Times New Roman" font-weight="bold" font-size="0.2" fill="#cc3300">α</text>
+
+</svg>
